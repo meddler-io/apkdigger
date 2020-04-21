@@ -1,0 +1,1 @@
+jarsigner -verbose -keystore my-keystore.keystore -storepass password  -keypass password NewApk.apk  name_alias
