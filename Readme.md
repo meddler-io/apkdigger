@@ -1,12 +1,14 @@
+# `apkdigger`
+Docker container to decompile, build & sign APK
 
-# Why `apkdigger` ?
+## Why `apkdigger` ?
 If you are reverse enginner who loves to playaround and tamper with android apps, then decompilation , recompilation , & signing would be a regular job for you. apkdebgger aims to provides a handfull of command line scripts that would automate the repeated tasks. 
 `apkdigger` spins up a docker container to do the boring part of decompiling smali. 
 Once you are done with patching the code, spin up the container to do the reassembly.
 
 
 
-# Example
+## Example
 ```
 docker-compose run apkdigger decompile ./apk/test.apk -> Decompiles .apk -> .smali
 docker-compose run apkdigger recompile test_patched.apk # Recompiles smali - > signed APK
@@ -14,11 +16,11 @@ docker-compose run apkdigger purge # Resets state
 ```
 
 
-# Requirements
+## Requirements
 -   docker
 -   docker-compose
 
-# Installation
+## Installation
 ```
 git clone https://github.com/meddler-xyz/apkdigger.git
 cd apkdigger
@@ -30,7 +32,7 @@ docker-compose build .
 `apkdigger` is designed in a way that assumes you work on a single APK at a time.
 
 
-# Project Structure
+## Project Structure
 -   `apk/`: Contains apk files that would be decompiled
 -   `build/`: Contains generated (recompiled & signed) apk files
 -   `bin/`: Awesome binaries that handles the complex stuff
@@ -39,7 +41,7 @@ docker-compose build .
 -   `credentials/`: Keystore (Used to sign APK) 
 
 
-# Usage
+## Usage
 
 -   Let's say you wnant to decompile an APK file located at: `./apk/test.apk`
 
