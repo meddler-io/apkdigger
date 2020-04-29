@@ -16,7 +16,7 @@ chmod +x ./decompile
 chmod +x ./recompile
 docker-compose build .
 ```
-### Note:
+**Note:**
 `apkdigger` is designed in a way that assumes you work on a single APK at a time.
 
 
