@@ -31,18 +31,20 @@ docker-compose build .
 
 # Usage
 
-Let's say you wnant to decompile an APK file located at: ./apk/test.apk
-`docker-compose run apkdigger decompile ./apk/test.apk`
+-   Let's say you wnant to decompile an APK file located at: `./apk/test.apk`
 
-This decompiles the APK, and generates smali code inside .Decoded directory.
+```docker-compose run apkdigger decompile ./apk/test.apk```
 
-We recommend to open ./Decoded directory in Visual Studio Code / Atom / Sublime editor
+-   This decompiles the APK, and generates smali code inside .Decoded directory.
 
-Once you are done with tampering / patching the smali code, recompile the APK:
+-   We recommend to open ./Decoded directory in Visual Studio Code / Atom / Sublime editor
 
-`docker-compose run apkdigger recompile test_patched.apk`
+-   Once you are done with tampering / patching the smali code, recompile the APK:
 
-This'd generate a recompiled & signed APK:
+```docker-compose run apkdigger recompile test_patched.apk```
+
+-   This'd generate a recompiled & signed APK:
+
 `./apk/test_patched.apk`
 
 
