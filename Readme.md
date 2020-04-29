@@ -24,7 +24,7 @@ docker-compose build .
 -   `apk/`: Contains apk files that would be decompiled
 -   `build/`: Contains generated (recompiled & signed) apk files
 -   `bin/`: Awesome binaries that handles the complex stuff
--   `Decoded/`: Directory contains decompiled smali code 
+-   `.Decoded/`: Directory contains decompiled smali code 
 -   `scripts/`: Magical shell scripts 
 -   `credentials/`: Keystore (Used to sign APK) 
 
