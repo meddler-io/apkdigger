@@ -1,0 +1,4 @@
+#!/bin/bash
+#Decompile APK
+rm -rf .Decoded
+java -jar ./bin/apktool.jar d $1 -o .Decoded 

@@ -1,0 +1,6 @@
+#!/bin/bash
+#Recmompile & Sign APK
+rm $1
+java -jar ./bin/apktool.jar  -o $1 b .Decoded
+#Apk Signer
+jarsigner -verbose -keystore ./credentials/key.keystore -storepass password  -keypass password NewApk.apk  name_alias
