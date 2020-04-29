@@ -3,8 +3,8 @@
 If you are reverse enginner who loves to playaround and tamper with android apps, then decompilation , recompilation , & signing would be a regular job for you. apkdebgger aims to provides a handfull of command line scripts that would automate the repeated tasks. 
 
 # Requirements
-Java (JDK 8)
-Linux / MacOS
+-   `Java` (Recommended: JDK 8)
+-   `Linux / MacOS`
 
 # Installation
 ```
@@ -18,10 +18,10 @@ chmod +x ./recompile
 
 
 # Project Structure
-`apk/`: Contains apk files that would be decompiled
-`build/`: Contains generated (recompiled & signed) apk files
-`bin/`: Awesome binaries that handles the complex stuff
-`Decoded/`: Directory contains decompiled smali code 
+-   `apk/`: Contains apk files that would be decompiled
+-   `build/`: Contains generated (recompiled & signed) apk files
+-   `bin/`: Awesome binaries that handles the complex stuff
+-   `Decoded/`: Directory contains decompiled smali code 
 
 
 
