@@ -4,6 +4,16 @@ If you are reverse enginner who loves to playaround and tamper with android apps
 `apkdigger` spins up a docker container to do the boring part of decompiling smali. 
 Once you are done with patching the code, spin up the container to do the reassembly.
 
+
+
+# Example
+```
+docker-compose run apkdigger decompile ./apk/test.apk -> Decompiles .apk -> .smali
+docker-compose run apkdigger recompile test_patched.apk # Recompiles smali - > signed APK
+docker-compose run apkdigger purge # Resets state
+```
+
+
 # Requirements
 -   docker
 -   docker-compose
@@ -46,5 +56,6 @@ docker-compose build .
 -   This'd generate a recompiled & signed APK:
 
 `./apk/test_patched.apk`
+
 
 
