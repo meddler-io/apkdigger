@@ -1,5 +1,5 @@
 
-# Why `apkdigger`
+# Why `apkdigger` ?
 If you are reverse enginner who loves to playaround and tamper with android apps, then decompilation , recompilation , & signing would be a regular job for you. apkdebgger aims to provides a handfull of command line scripts that would automate the repeated tasks. 
 
 # Requirements
